@@ -1,0 +1,209 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+/* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Light-Grey-light: hsla(217, 12%, 63%, 0.1);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Very-Dark-Blue-light: hsla(216, 12%, 8%, 0.5);
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-Dark-Blue);
+}
+p{
+    font-size: 15px;
+}
+
+.firs{
+    background: var(--Dark-Blue);
+    width: 310px;
+    height: 310px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7%;
+    justify-content: center;
+    /* align-items: center; */
+  
+
+}
+.first{
+    font-weight: 700;
+    color: var(--White);
+}
+
+.second{
+    font-weight: 400;
+    color: var(--Light-Grey);
+    line-height: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+button{
+    background: var(--Light-Grey-light);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: var(--Light-Grey);
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover{
+    background: var(--Medium-Grey);
+    color: var(--White);
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:focus{
+    background: var(--Orange);
+    color: var(--White);
+}
+
+.svg{
+    background: var(--Light-Grey-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 23px;
+}
+
+
+
+#btn{
+    height: 17%;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Orange);
+    text-decoration: none;
+    transition: .35s;
+}
+
+#btn:hover{
+    color: var(--Orange);
+    background: var(--White);
+    cursor: pointer;
+}
+
+
+
+.secon{
+    background: var(--Dark-Blue);
+    width: 310px;
+    height: 310px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: hsla(217, 12%, 63%, 0.1);
+}
+
+.remove{
+    display: none;
+}
+
+.show{
+display: block;
+}
+
+#first{
+    color: var(--Orange);
+    background: var(--Light-Grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 20px;
+    border-radius: 9px;
+}
+
+#firstA{
+    color: var(--Orange);
+    background: var(--Light-Grey-light);
+    width: 200px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#second{
+    font-weight: 700;
+    font-size: x-large;
+    margin: 0;
+    color: var(--White);
+}
+
+#third{
+    font-weight: 400;
+    color: var(--Light-Grey);
+    font-size: medium;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 580px) {
+    #firstMain{
+        width: 280px;
+        height: 439px;
+        border-radius: 29px;
+        padding: 23px;
+    }
+    .svg{
+        width: 48px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    button{
+        width: 20%;
+        height: 45px;
+        border-radius: 49%;
+        font-size: x-large;
+    }
+
+    .first{
+        font-size: x-large;
+    }
+
+    .second{
+        font-size: x-large;
+        line-height: 30px;
+    }
+
+    #btn{
+        height: 50px;
+    }
+}
